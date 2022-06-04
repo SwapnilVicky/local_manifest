@@ -4,9 +4,9 @@
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
    
   <!-- Remove HALs -->
-                <!-- remove-project name="platform_packages_apps_Launcher3" /-->
+                <remove-project name="LineageOS/android_vendor_lineage" />
                 <!-- remove-project name="android_packages_apps_Settings" /-->
-                <!-- remove-project name="platform_frameworks_base" /-->
+                <remove-project name="LineageOS/android_frameworks_base" />
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12L" />
@@ -14,7 +14,8 @@
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="12" />
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="twelve-kcal" />
-                <!-- project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="arcadia-next" /-->
+                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
+                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-19.1" />
    
 </manifest>
 
