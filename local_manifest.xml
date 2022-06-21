@@ -2,11 +2,15 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
+        <remote name="arrwfor" fetch="https://github.com/forked-arrowos" />
    
   <!-- Remove HALs -->
-                <!-- remove-project name="platform_packages_apps_Launcher3" /-->
-                <!-- remove-project name="android_packages_apps_Settings" /-->
-                <!-- remove-project name="platform_frameworks_base" / -->
+                <remove-project name="android_packages_apps_Settings" />
+                <remove-project name="android_frameworks_base" />
+                <remove-project name="android_vendor_arrow" />
+                <remove-project name="android_packages_apps_Launcher3" />
+                <remove-project name="android_packages_apps_GameSpace" />
+                <remove-project name="android_packages_apps_ArrowPrebuilts" />
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12" />
@@ -14,7 +18,16 @@
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="12" />
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="twelve-kcal" />
-                <!-- project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="arcadia-next" / -->
+   
+   <!-- Forked ArrowOS --> 
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="frameworks/base" name="android_frameworks_base" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="vendor/arrow" name="android_vendor_arrow" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="packages/apps/ArrowPrebuilts" name="android_packages_apps_ArrowPrebuilts" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="external/colorkt" name="external_colorkt" revision="arrow-12.1" remote="arrwfor" />	
+                <project path="external/themelib" name="external_themelib" revision="arrow-12.1" remote="arrwfor" />
    
 </manifest>
 
