@@ -3,6 +3,8 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote name="arrwfor" fetch="https://github.com/forked-arrowos" />
+        <remote  name="cr" fetch="https://gitlab.com/crdroidandroid" />
+        <remote  name="v" fetch="https://github.com/ProjectVelvet" />
    
   <!-- Remove HALs -->
                 <remove-project name="android_packages_apps_Settings" />
@@ -18,7 +20,8 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="12" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="12" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="twelve-kcal" />
+                <project path="kernel/xiaomi/sm6250" name="android_kernel_sm6250" remote="v" revision="kcal_v1.x" />
+                <project path="vendor/miuicamera" name="Miuicamera" remote="cr" revision="12.1" />
    
    <!-- Forked ArrowOS --> 
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="arrow-12.1" remote="arrwfor" />	
