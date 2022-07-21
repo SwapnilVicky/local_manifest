@@ -2,6 +2,7 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
+        <remote  name="f" fetch="https://github.com/ForkLineageOS" />
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_vendor_lineage" />
@@ -21,7 +22,7 @@
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-19.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
                 <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-19.1" />
-                <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="s" revision="lineage-19.1" />
+                <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="f" revision="lineage-19.1" />
    
 </manifest>
 
