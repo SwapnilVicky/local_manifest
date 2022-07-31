@@ -2,6 +2,7 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
+        <remote  name="a" fetch="https://github.com/ArrowOS-Devices" />
    
   <!-- Remove HALs -->
                 <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
@@ -14,7 +15,7 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="12L" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="12" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="12" />
+                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="a" revision="arrow-12.1" />
    
    <!-- addition -->
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
