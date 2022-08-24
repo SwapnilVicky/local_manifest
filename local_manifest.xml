@@ -2,6 +2,7 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
+        <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
    
   <!-- Remove HALs -->
                 <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
@@ -20,6 +21,10 @@
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-19.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
+                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="x" revision="arrow-12.1" />
+                <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="x" revision="arrow-12.1" />
+   
+   
                 <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-19.1" / -->
    
 </manifest>
