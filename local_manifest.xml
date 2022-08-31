@@ -3,6 +3,7 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
+        <remote name="clang" fetch="https://github.com/kdrag0n" />
    
   <!-- Remove HALs -->
                 <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
@@ -18,6 +19,7 @@
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="12" />
    
    <!-- addition -->
+                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-19.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
