@@ -3,7 +3,7 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
-        <remote  name="c" fetch="https://github.com/crdroidandroid" />
+
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
@@ -25,7 +25,7 @@
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
                 <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="x" revision="arrow-12.1" />
    
-                <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="c" revision="11.0"  clone-depth="1" />
+                <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="s" revision="11.0"  clone-depth="1" />
    
    
 
