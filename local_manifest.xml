@@ -3,9 +3,7 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
-   <remote name="arw"
-
-                fetch="https://gitlab.com/arrowos-project" />
+        <remote name="arw" fetch="https://gitlab.com/arrowos-project" />
 
    
   <!-- Remove HALs -->
@@ -18,7 +16,7 @@
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12" />
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="12" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="12" />
-                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="sonal" />
+                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="12" />
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="12" />
    
    <!-- addition -->
