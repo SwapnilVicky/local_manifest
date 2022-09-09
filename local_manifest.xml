@@ -10,7 +10,7 @@
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <remove-project name="LineageOS/android_system_core" />
-                <!-- remove-project name="LineageOS/android_build" / -->
+                <remove-project name="LineageOS/android_build" />
                                       
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="12" />
@@ -28,6 +28,16 @@
    
                 <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" />
+   
+    <project path="build/make" name="android_build" groups="pdk" remote="s" revision="lineage-19.1" />
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+    </project>
    
 
    
