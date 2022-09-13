@@ -3,8 +3,8 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="k" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
-        <!-- remote  name="x" fetch="https://github.com/ArrowOS-Devices" / -->
-        <!-- remote name="arw" fetch="https://gitlab.com/arrowos-project" / -->
+        <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
+        <remote name="arw" fetch="https://gitlab.com/arrowos-project" />
 
    
   <!-- Remove HALs -->
@@ -27,8 +27,8 @@
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
                 <!-- project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="x" revision="arrow-12.1" / -->
    
-                <!-- project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" / -->
-                <!-- project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" / -->
+                <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" />
+                <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" />
  
 
    
