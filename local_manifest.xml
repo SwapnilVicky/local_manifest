@@ -2,7 +2,7 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="p" fetch="https://github.com/LineageOS" />
+        <remote  name="u" fetch="https://github.com/LineageOS" />
         <remote  name="k" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
         <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
         <remote name="arw" fetch="https://gitlab.com/arrowos-project" />
@@ -19,7 +19,7 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="13" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="k" revision="twelve" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="k" revision="twelve" />
-                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="p" revision="lineage-19.1" />
+                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="u" revision="lineage-19.1" />
    
    <!-- addition -->
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
