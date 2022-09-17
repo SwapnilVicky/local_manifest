@@ -2,10 +2,9 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="u" fetch="https://github.com/LineageOS" />
-        <remote  name="k" fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+        <remote  name="k" fetch="https://github.com/LineageOS" />
         <remote  name="x" fetch="https://github.com/ArrowOS-Devices" />
-        <remote name="arw" fetch="https://gitlab.com/arrowos-project" />
+        <!-- remote name="arw" fetch="https://gitlab.com/arrowos-project" / -->
 
    
   <!-- Remove HALs -->
@@ -16,20 +15,18 @@
                                       
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="13" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="k" revision="twelve" />
-                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="k" revision="twelve" />
-                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="u" revision="lineage-19.1" />
+                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
+                <project path="kernel/xiaomi/miatoll" name="android_kernel_xiaomi_sm6250" remote="k" revision="lineage-19.1" />
    
    <!-- addition -->
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" />
                 <!-- project path="build/make" name="android_build" remote="s" revision="lineage-19.1" / -->
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-19.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" />
-                <!-- project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="x" revision="arrow-12.1" / -->
+                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="x" revision="arrow-12.1" />
    
-                <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" />
-                <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" />
+                <!-- project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" / -->
+                <!-- project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" / -->
  
 
    
