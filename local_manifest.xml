@@ -3,7 +3,7 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="mup" fetch="https://gitlab.com/the-muppets" />
-        <!-- remote name="arw" fetch="https://gitlab.com/arrowos-project" / -->
+        <remote name="arw" fetch="https://github.com/LineageOS" />
 
    
   <!-- Remove HALs -->
@@ -25,7 +25,7 @@
                 <!-- project path="system/core" name="android_system_core" remote="s" revision="lineage-19.1" / -->
    
                 <!-- project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="x" revision="arrow-11.0" / -->
-                <!-- project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="arw" revision="master" / -->
+                <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arw" revision="lineage-20" />
  
 
    
