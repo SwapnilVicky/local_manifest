@@ -4,7 +4,7 @@
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="mup" fetch="https://gitlab.com/the-muppets" />
         <remote name="arw" fetch="https://github.com/LineageOS" />
-        <remote name="daZ" fetch="https://github.com/LeddaZ" />
+        <remote name="daZ" fetch="https://github.com/ProjectVelvet" />
 
    
   <!-- Remove HALs -->
@@ -17,7 +17,7 @@
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="13" />
                 <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="mup" revision="lineage-19.1" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="daZ" revision="tm" />
+                <project path="kernel/xiaomi/sm6250" name="android_kernel_sm6250" remote="daZ" revision="kcal" />
    
    <!-- addition -->
                 <!-- project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-19.1" / -->
