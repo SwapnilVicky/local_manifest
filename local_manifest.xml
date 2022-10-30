@@ -2,7 +2,6 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="x" fetch="https://github.com/Spark-Devices" />
         <remote  name="k" fetch="https://github.com/tequilaOS" />
 
    
@@ -16,7 +15,7 @@
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="x" revision="pyro" />
+                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="tobacco" />
    
    <!-- addition -->
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-20.0" />
