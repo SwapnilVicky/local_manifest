@@ -11,7 +11,6 @@
                 <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll-1" remote="s" revision="13" />
    
    <!-- addition -->
-                <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
    
 </manifest>
 
