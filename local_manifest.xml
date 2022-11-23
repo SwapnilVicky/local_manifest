@@ -10,7 +10,7 @@
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
                 <remove-project name="LineageOS/android_frameworks_base" />
-                <remove-project name="LineageOS/android_vendor_lineage" />
+                <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
                 <remove-project name="LineageOS/android_system_core" />
                 <remove-project name="LineageOS/android_build" />
 
@@ -18,9 +18,9 @@
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="sonal" />
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="sonal" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
-                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="sonal" />
+                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="13" />
                 <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="cos" revision="main" />
-                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" />
+                <!-- project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" / -->
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
@@ -28,7 +28,7 @@
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="L20" />
                 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
+                <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" / -->
                 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
    
                 <project path="build/make" name="android_build" remote="s" revision="lineage-20.0" groups="pdk" >
