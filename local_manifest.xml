@@ -3,7 +3,6 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="cos" fetch="https://github.com/rayavanindra" />
 
    
   <!-- Remove HALs -->
@@ -19,7 +18,7 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="13" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="13" />
-                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="cos" revision="main" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="13" />
                 <!-- project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="main" / -->
    
    <!-- addition -->
