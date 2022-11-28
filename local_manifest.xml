@@ -2,37 +2,31 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="arrow" fetch="https://github.com/ArrowOS-Devices" />
-        <remote  name="clang" fetch="https://github.com/kdrag0n" />
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-        <remote  name="vel" fetch="https://github.com/ProjectVelvet" />
 
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
                 <remove-project name="LineageOS/android_frameworks_base" />
-                <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
+                <remove-project name="LineageOS/android_vendor_lineage" />
                 <remove-project name="LineageOS/android_system_core" />
                 <remove-project name="LineageOS/android_lineage-sdk" />
                 <remove-project name="LineageOS/android_build" />
 
   <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="sonal" />
-                <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="sonal" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
-                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="sonal" />
-                <project path="kernel/xiaomi/sm6250" name="android_kernel_sm6250" remote="vel" revision="kcal" />
-                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="arrow" revision="arrow-13.0" />
+                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
+                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
+                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="13" />
+                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="arrow-13.0" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="L20" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-20.0" />
                 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
-                <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" / -->
+                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
                 <project path="lineage-sdk" name="android_lineage-sdk" remote="s" revision="lineage-20.0" />
                 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
    
