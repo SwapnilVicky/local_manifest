@@ -9,6 +9,7 @@
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
                 <remove-project name="LineageOS/android_frameworks_base" />
+                <remove-project name="LineageOS/android_frameworks_av" />
                 <remove-project name="LineageOS/android_vendor_lineage" />
                 <remove-project name="LineageOS/android_system_core" />
                 <!-- remove-project name="LineageOS/android_lineage-sdk" / -->
@@ -22,6 +23,7 @@
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="L20" />
+                <project path="frameworks/av" name="android_frameworks_av" remote="s" revision="lineage-20.0" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="L20" />
                 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
