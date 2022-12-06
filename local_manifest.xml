@@ -2,7 +2,12 @@
 <manifest>
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
+        <remote  name="lineage" fetch="https://github.com/LineageOS" revision="lineage-20.0-caf-sm8150"/>
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
+
+                <remove-project name="android_hardware_qcom_audio" />
+                <remove-project name="android_hardware_qcom_display" />
+                <remove-project name="android_hardware_qcom_media" />
 
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="bliss" />
@@ -10,7 +15,11 @@
                 <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="test" />
                 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
 
-<project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
+
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="lineage" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lineage" />
 
 </manifest>
 
