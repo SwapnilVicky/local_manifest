@@ -3,7 +3,6 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-        <remote  name="q" fetch="https://github.com/Spark-Devices" />
 
    
   <!-- Remove HALs -->
@@ -19,13 +18,13 @@
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="q" revision="pyro" />
+                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="test" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="L20" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-20.0" />
                 <project path="frameworks/av" name="android_frameworks_av" remote="s" revision="lineage-20.0" />
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="L20" />
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-20.0" />
                 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
                 <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
