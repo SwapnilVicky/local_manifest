@@ -18,7 +18,7 @@
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="13" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="test" />
+                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="s" revision="13" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
