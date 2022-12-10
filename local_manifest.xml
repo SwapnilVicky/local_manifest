@@ -13,7 +13,8 @@
                 <project path="vendor/xiaomi/sm6250-common" name="android_vendor_xiaomi_sm6250-common" remote="q" revision="arrow-13.0" />
                 <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="q" revision="arrow-13.0" />
 
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
+                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
+                <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="s" revision="arrow-13.0" />
 
 </manifest>
 
