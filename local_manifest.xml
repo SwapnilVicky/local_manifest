@@ -8,7 +8,7 @@
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="10" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="10" />
-                <project path="kernel/xiaomi/miatoll" name="kernel_xiaomi_miatoll" remote="xt" revision="xq" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="xt" revision="xq" />
                 <project path="vendor/aeonax/ANXCamera" name="vendor_aeonax_ANXCamera" remote="k" revision="master" />
 
    
