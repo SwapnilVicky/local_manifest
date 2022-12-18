@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    
-        <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="xt" fetch="https://github.com/Xtended-Devices" />
-        <remote  name="k" fetch="https://github.com/SonalSingh18" />
 
   <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="10" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="10" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="xt" revision="xq" />
-                <project path="vendor/aeonax/ANXCamera" name="vendor_aeonax_ANXCamera" remote="k" revision="master" />
+                <project path="device/xiaomi/miatoll" name="SwapnilVicky/device_xiaomi_miatoll" remote="github" revision="10" />
+                <project path="vendor/xiaomi/miatoll" name="SwapnilVicky/vendor_xiaomi_miatoll" remote="github" revision="10" />
+                <project path="kernel/xiaomi/sm6250" name="Xtended-Devices/kernel_xiaomi_sm6250" remote="github" revision="xq" />
+                <project path="vendor/aeonax/ANXCamera" name="SonalSingh18/vendor_aeonax_ANXCamera" remote="github" revision="master" />
 
    
 </manifest>
