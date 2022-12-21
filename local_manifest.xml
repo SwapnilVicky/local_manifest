@@ -6,6 +6,7 @@
         <remote  name="k" fetch="https://github.com/SonalSingh18" />
    
   <!-- Remove HALs -->
+                <remove-project name="LineageOS/android_packages_apps_LineageParts" />
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <remove-project name="LineageOS/android_system_core" />
@@ -24,8 +25,9 @@
 
    
  <!-- addition -->
-                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-17.1" />
+                <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="s" revision="lineage-17.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-17.1" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-17.1" />
                 <project path="system/core" name="android_system_core" remote="s" revision="lineage-17.1" />
                 <project path="lineage-sdk" name="android_lineage-sdk" remote="s" revision="lineage-17.1" />
    
