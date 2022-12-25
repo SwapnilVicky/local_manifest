@@ -3,35 +3,39 @@
    
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-
+        <remote  name="cos" fetch="https://github.com/rayavanindra" />
+        <remote  name="flex" fetch="https://github.com/FlexLineage" />
+   
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <!-- remove-project name="LineageOS/android_frameworks_av" / -->
-                <remove-project name="LineageOS/android_vendor_lineage" />
+                <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
                 <remove-project name="LineageOS/android_system_core" />
                 <!-- remove-project name="LineageOS/android_lineage-sdk" / -->
                 <remove-project name="LineageOS/android_build" />
 
   <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="rebase" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="13" />
-                <project path="kernel/xiaomi/miatoll" name="kernel" remote="s" revision="13" />
+                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="s13" />
+                <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="13" />
+                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
+                <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="13" />
+                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="cos" revision="main" />
                 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="s" revision="lineage-20.0" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="s" revision="lineage-20.0" / -->
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="s" revision="lineage-20.0" />
-                <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="s" revision="lineage-20.0" />
-                <project path="system/core" name="android_system_core" remote="s" revision="lineage-20.0" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-20.0" />
+                <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="flex" revision="lineage-20.0" />
+                <project path="system/core" name="android_system_core" remote="flex" revision="lineage-20.0" />
+                <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" / -->
                 <!-- project path="lineage-sdk" name="android_lineage-sdk" remote="s" revision="lineage-20.0" / -->
 
-                <project path="build/make" name="android_build" remote="s" revision="lineage-20.0" groups="pdk" >
+                <project path="build/make" name="android_build" remote="flex" revision="lineage-20.0" groups="pdk" >
                 <copyfile src="core/root.mk" dest="Makefile" />
                 <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
                 <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
