@@ -11,6 +11,7 @@
                 <remove-project name="LineageOS/android_packages_apps_LineageParts" />
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_frameworks_base" />
+                <remove-project name="LineageOS/android_vendor_lineage" />
                 <remove-project name="LineageOS/android_system_core" />
                 <remove-project name="LineageOS/android_lineage-sdk" />
                 <remove-project name="LineageOS/android_build" />
@@ -29,6 +30,7 @@
                 <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-17.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-17.1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-17.1" />
+                <project path="vendor/lineage" name="android_vendor_lineage" remote="flex" revision="lineage-17.1" />
                 <project path="system/core" name="android_system_core" remote="flex" revision="lineage-17.1" />
                 <project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-17.1" />
    
