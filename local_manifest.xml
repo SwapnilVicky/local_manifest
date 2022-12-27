@@ -5,6 +5,7 @@
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
         <remote  name="cos" fetch="https://github.com/rayavanindra" />
         <remote  name="flex" fetch="https://github.com/FlexLineage" />
+        <remote name="clang" fetch="https://github.com/kdrag0n" />
    
    
   <!-- Remove HALs -->
@@ -26,6 +27,7 @@
                 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="s" revision="13" />
    
    <!-- addition -->
+                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="s" revision="lineage-20.0" / -->
