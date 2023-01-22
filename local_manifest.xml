@@ -4,7 +4,6 @@
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="flex" fetch="https://github.com/FlexLineage" />
         <remote name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="k" fetch="https://github.com/SonalSingh18" />
         <remote  name="xt" fetch="https://github.com/Xtended-Devices" />
    
   <!-- Remove HALs -->
@@ -21,7 +20,6 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="lineage-17.1" />
                 <project path="vendor/xiaomi" name="vendor_xiaomi_sm6250-common" remote="s" revision="10" />
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="xt" revision="xq" />
-                <project path="vendor/aeonax/ANXCamera" name="vendor_aeonax_ANXCamera" remote="k" revision="master" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="10" />
                 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 
