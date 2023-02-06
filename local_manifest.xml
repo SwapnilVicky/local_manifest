@@ -6,14 +6,36 @@
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
         <remote  name="xt" fetch="https://github.com/Xtended-Devices" />
    
+     <remote  name="omni"
+           fetch="https://github.com/omnirom" />
+   
+     <remote name="fdroid"
+           fetch="https://gitlab.com/fdroid/" />
+   
+     <remote  name="aicp"
+           fetch="https://github.com/aicp" />
+   
+     <remote  name="pxlexp"
+           fetch="https://github.com/PixelExperience" />
+   
+     <remote  name="bb"
+           fetch="https://gitlab.com/rr-os" />
+
+     <remote  name="ThankYM"
+           fetch="https://github.com/ThankYouMario" />
+   
   <!-- Remove HALs -->
-                <!-- remove-project name="LineageOS/android_packages_apps_LineageParts" / -->
-                <!-- remove-project name="LineageOS/android_packages_apps_Settings" / -->
+                <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+                <remove-project name="LineageOS/android_packages_apps_Settings" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <remove-project name="LineageOS/android_vendor_lineage" />
                 <remove-project name="LineageOS/android_system_core" />
-                <!-- remove-project name="LineageOS/android_lineage-sdk" / -->
-                <!-- remove-project name="LineageOS/android_build" / -->
+                <remove-project name="LineageOS/android_lineage-sdk" />
+                <remove-project name="LineageOS/android_build" />
+                <remove-project name="LineageOS/android_packages_services_Telecomm" />
+                <remove-project name="LineageOS/android_device_lineage_sepolicy" />
+                <remove-project name="LineageOS/android_frameworks_av" />
+                <remove-project name="LineageOS/android_frameworks_native" />
 
   <!-- Trees -->
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="10" />
@@ -25,12 +47,29 @@
 
    
  <!-- addition -->
-                <!-- project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-17.1" -->
-                <!-- project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-17.1" -->
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-17.1" />
+                <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-17.1" />
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-17.1" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="17.1" />
                 <project path="vendor/lineage" name="android_vendor_lineage" remote="flex" revision="lineage-17.1" />
                 <project path="system/core" name="android_system_core" remote="flex" revision="lineage-17.1" />
-                <!-- project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-17.1" -->
+                <project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-17.1" />
+                <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="flex" />
+                <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="flex" />
+                <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="flex" />
+                <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="flex" />
+   
+   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="omni" revision="android-10" />
+     <!-- FLOSS -->
+  <project path="packages/apps/F-DroidPrivilegedExtension" name="privileged-extension.git" remote="fdroid" revision="refs/tags/0.2.11" />
+     <!-- AICP -->
+  <project path="packages/apps/OmniJaws" name="packages_services_OmniJaws" remote="aicp" revision="q10.0" />
+     <!-- Pixel experience pack-->
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="pxlexp" revision="ten-plus" />
+     <!-- FaceUnlock-->
+  <project path="external/motorola/faceunlock" name="external_utils" remote="bb" revision="Q" />
+
+  <!-- AOSPA ThankYouMario-->
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="ThankYM" revision="quartz" />
    
                    
 </manifest>
