@@ -21,6 +21,9 @@
      <remote  name="ThankYM"
            fetch="https://github.com/ThankYouMario" />
    
+     <remote  name="lottie"
+           fetch="https://github.com/crdroidandroid" />
+   
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_LineageParts" />
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
@@ -76,6 +79,8 @@
 
   <!-- AOSPA ThankYouMario-->
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="ThankYM" revision="quartz" />
+   
+  <project path="frameworks/support/lottie" name="android_frameworks_support_lottie" remote="lottie" revision="10.0" />
    
                    
 </manifest>
