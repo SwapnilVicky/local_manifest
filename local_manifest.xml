@@ -49,7 +49,7 @@
  <!-- addition -->
                 <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-17.1" />
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-17.1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="17.1" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-17.1" />
                 <project path="vendor/lineage" name="android_vendor_lineage" remote="flex" revision="lineage-17.1" />
                 <project path="system/core" name="android_system_core" remote="flex" revision="lineage-17.1" />
                 <project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-17.1" />
@@ -58,7 +58,7 @@
                 <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="flex" revision="lineage-17.1" />
                 <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="flex" revision="lineage-17.1" />
    
-                <project path="build/make" name="android_build" groups="pdk" remote="flex" >
+                <project path="build/make" name="android_build" groups="pdk" revision="lineage-17.1" remote="flex" >
                 <copyfile src="core/root.mk" dest="Makefile" />
                 <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
                 <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
