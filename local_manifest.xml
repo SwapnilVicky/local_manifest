@@ -5,7 +5,7 @@
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
         <remote  name="flex" fetch="https://github.com/FlexLineage" />
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="sonal" fetch="https://github.com/SonalSingh18" />
+        <remote  name="sonal" fetch="https://gitlab.com/SonalSingh18" />
    
    
   <!-- Remove HALs -->
@@ -29,12 +29,12 @@
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
                 <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="13" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="master" />
+                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="bt-next" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="flex" revision="lineage-20.0" / -->
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-20.0" />
                 <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-20.0" />
