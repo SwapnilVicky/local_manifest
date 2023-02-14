@@ -5,7 +5,6 @@
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
         <remote  name="flex" fetch="https://github.com/FlexLineage" />
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="sonal" fetch="https://gitlab.com/SonalSingh18" />
    
    
   <!-- Remove HALs -->
@@ -13,7 +12,7 @@
                 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
                 <remove-project name="LineageOS/android_frameworks_base" />
                 <!-- remove-project name="LineageOS/android_frameworks_av" / -->
-                <!-- remove-project name="LineageOS/android_vendor_lineage" / -->
+                <remove-project name="LineageOS/android_vendor_lineage" />
                 <remove-project name="LineageOS/android_system_core" />
                 <remove-project name="LineageOS/android_lineage-sdk" />
                 <remove-project name="LineageOS/android_build" />
@@ -27,9 +26,8 @@
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="lineage-20.0" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="13" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="new" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" />
    
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
@@ -42,7 +40,7 @@
                 <project path="system/core" name="android_system_core" remote="flex" revision="lineage-20.0" />
                 <project path="bionic" name="android_bionic" remote="flex" revision="lineage-20.0" />
                 <project path="hardware/interfaces" name="android_hardware_interfaces" remote="flex" revision="lineage-20.0" />
-                <!-- project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" / -->
+                <project path="vendor/lineage" name="android_vendor_lineage" remote="s" revision="lineage-20.0" />
                 <project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-20.0" />
 
                 <project path="build/make" name="android_build" remote="flex" revision="lineage-20.0" groups="pdk" >
