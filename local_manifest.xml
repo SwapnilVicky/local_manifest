@@ -36,7 +36,7 @@
                <!-- project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon" -->
                <!-- linkfile src="root.bp" dest="Android.bp" / -->
                <!-- linkfile src="bootstrap.bash" dest="bootstrap.bash" / -->
-               <!-- /project>
+               <!-- /project -->
    
    
 
