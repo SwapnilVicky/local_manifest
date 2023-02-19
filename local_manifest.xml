@@ -8,18 +8,18 @@
         <remote  name="cos" fetch="https://github.com/rayavanindra" />
    
   <!-- Changes needed for Miui Camera -->
-                <remove-project name="platform_bionic" />
-                <remove-project name="platform_hardware_interfaces" />
-                <remove-project name="platform_frameworks_av" />
-                <remove-project name="platform_frameworks_base" />
-                <remove-project name="platform_build_soong" />
+                <!-- remove-project name="platform_bionic" / -->
+                <!-- remove-project name="platform_hardware_interfaces" / -->
+                <!-- remove-project name="platform_frameworks_av" / -->
+                <!-- remove-project name="platform_frameworks_base" / -->
+                <!-- remove-project name="platform_build_soong" / -->
    
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="typhoon" />
                 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="typhoon" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="master" />
+                <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="master" / -->
                 <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="cos" revision="main" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="typhoon" />
    
@@ -28,15 +28,15 @@
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
    
    <!-- Changes needed for Miui Camera -->
-               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" />
-               <project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" />
-               <project path="bionic" name="platform_bionic" remote="s" revision="typhoon" />
-               <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" />
+               <!-- project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" / -->
+               <!-- project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" / -->
+               <!--  project path="bionic" name="platform_bionic" remote="s" revision="typhoon" / -->
+               <!-- project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" / -->
    
-               <project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon" >
-               <linkfile src="root.bp" dest="Android.bp" />
-               <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-               </project>
+               <!-- project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon" -->
+               <!-- linkfile src="root.bp" dest="Android.bp" / -->
+               <!-- linkfile src="bootstrap.bash" dest="bootstrap.bash" / -->
+               <!-- /project>
    
    
 
