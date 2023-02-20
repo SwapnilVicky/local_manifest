@@ -28,7 +28,7 @@
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
    
    <!-- Changes needed for Miui Camera -->
-               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="gameprops" />
+               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" />
                <project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" />
                <project path="bionic" name="platform_bionic" remote="s" revision="typhoon" />
                <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" />
