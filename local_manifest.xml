@@ -4,7 +4,7 @@
         <remote  name="s" fetch="https://github.com/SwapnilVicky" />
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="sonal" fetch="https://github.com/SonalSingh18" />
+        <!-- remote  name="sonal" fetch="https://github.com/SonalSingh18" / -->
         <remote  name="cos" fetch="https://github.com/rayavanindra" />
    
   <!-- Changes needed for Miui Camera -->
