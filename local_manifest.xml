@@ -20,7 +20,7 @@
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
                 <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="master" / -->
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="new" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="13" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="typhoon" />
    
    <!-- Track clangs -->
@@ -28,7 +28,7 @@
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
    
    <!-- Changes needed for Miui Camera -->
-               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="gameprops" />
+               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" />
                <project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" />
                <project path="bionic" name="platform_bionic" remote="s" revision="typhoon" />
                <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" />
