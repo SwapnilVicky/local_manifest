@@ -7,7 +7,7 @@
         <remote  name="sonal"    fetch="https://github.com/SonalSingh18" />
         <remote  name="clang"    fetch="https://github.com/kdrag0n" />
         <remote  name="cos"      fetch="https://github.com/rayavanindra" />
-        <remote name="web"       fetch="https://android.googlesource.com/" />
+        <remote  name="web"       fetch="https://android.googlesource.com" />
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
