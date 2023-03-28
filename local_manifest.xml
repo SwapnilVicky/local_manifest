@@ -29,7 +29,7 @@
                 <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="r450784d" revision="13" / -->
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="s" revision="13" />
+                <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="new" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
    
    <!-- addition -->
