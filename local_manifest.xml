@@ -6,7 +6,7 @@
         <remote  name="flex"     fetch="https://github.com/FlexLineage" />
         <remote  name="sonal"    fetch="https://github.com/SonalSingh18" />
         <remote  name="clang"    fetch="https://github.com/kdrag0n" />
-        <remote  name="cos"      fetch="https://github.com/rayavanindra" />
+        <remote  name="cos"      fetch="https://github.com/clarencelol" />
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
@@ -29,7 +29,7 @@
                 <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="r450784d" revision="13" / -->
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="android_kernel_xiaomi_sm6250" remote="sonal" revision="arrow-13.0" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="cos" revision="13-melon" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
    
    <!-- addition -->
