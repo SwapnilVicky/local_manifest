@@ -6,7 +6,7 @@
         <remote  name="flex"     fetch="https://github.com/FlexLineage" />
         <remote  name="sonal"    fetch="https://github.com/SonalSingh18" />
         <remote  name="clang"    fetch="https://github.com/kdrag0n" />
-        <remote  name="cos"      fetch="https://github.com/clarencelol" />
+        <remote  name="clol"     fetch="https://github.com/clarencelol" />
         <remote  name="tequila"  fetch="https://github.com/tequilaOS" />
    
   <!-- Remove HALs -->
@@ -30,7 +30,7 @@
                 <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="r450784d" revision="13" / -->
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="base" />
+                <project path="kernel/xiaomi/sm6250" name="kernel_xiaomi_sm6250" remote="clol" revision="13-melon" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
    
    <!-- addition -->
