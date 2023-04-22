@@ -1,1 +1,1 @@
-# local_manifesr
+# local_manifest
