@@ -26,7 +26,7 @@
 
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
-                <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" / -->
+                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" />
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="typhoon" />
                 <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
