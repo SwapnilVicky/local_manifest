@@ -26,7 +26,7 @@
 
   <!-- Trees --> 
                 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" />
+                <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" / -->
                 <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="typhoon" />
                 <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="main" />
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
@@ -34,7 +34,7 @@
    <!-- addition -->
                 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="bt-next" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="flex" revision="lineage-20.0" / -->
                 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-20.0" />
                 <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="flex" revision="lineage-20.0" />
