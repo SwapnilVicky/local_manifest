@@ -9,7 +9,6 @@
         <remote  name="clol"     fetch="https://github.com/clarencelol" />
         <remote  name="tequila"  fetch="https://github.com/tequilaOS" />
         <remote  name="gitlab"   fetch="https://gitlab.com" />
-        <remote name="xyz-prjkt" fetch="https://github.com/xyz-prjkt" />
    
   <!-- Remove HALs -->
                 <remove-project name="LineageOS/android_packages_apps_Settings" />
@@ -28,7 +27,7 @@
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
    
    <!-- addition -->
-                <project path="prebuilts/clang/host/linux-x86/xRageTC-clang" name="xRageTC-clang" remote="xyz-prjkt" revision="main" clone-depth="1" />
+<project path="prebuilts/clang/host/linux-x86/trb_clang" name="varunhardgamer/trb_clang" clone-depth="1" revision="17" remote="gitlab" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="bt-next" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="flex" revision="lineage-20.0" / -->
