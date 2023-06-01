@@ -5,7 +5,7 @@
         <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
         <remote  name="flex"     fetch="https://github.com/FlexLineage" />
         <remote  name="sonal"    fetch="https://gitlab.com/SonalSingh18" />
-        <remote  name="clang"    fetch="https://gitlab.com/Project-Nexus" />
+        <remote  name="clang"    fetch="https://github.com/kdrag0n" />
         <remote  name="clol"     fetch="https://github.com/clarencelol" />
         <remote  name="tequila"  fetch="https://github.com/tequilaOS" />
         <remote  name="gitlab"   fetch="https://gitlab.com" />
@@ -27,7 +27,7 @@
                 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
    
    <!-- addition -->
-                <project path="prebuilts/clang/host/linux-x86/nexus-clang" name="nexus-clang" clone-depth="1" revision="nexus-15" remote="clang" />
+                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
                 <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
                 <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
                 <!-- project path="frameworks/av" name="android_frameworks_av" remote="flex" revision="lineage-20.0" / -->
