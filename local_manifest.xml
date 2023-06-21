@@ -1,52 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    
-        <remote  name="s"        fetch="https://github.com/SwapnilVicky" />
-        <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-        <remote  name="flex"     fetch="https://github.com/FlexLineage" />
-        <remote  name="sonal"    fetch="https://gitlab.com/SonalSingh18" />
-        <remote  name="clang"    fetch="https://github.com/kdrag0n" />
-        <remote  name="clol"     fetch="https://github.com/clarencelol" />
-        <remote  name="tequila"  fetch="https://github.com/tequilaOS" />
-        <remote  name="gitlab"   fetch="https://gitlab.com" />
+<remote  name="s"        fetch="https://github.com/SwapnilVicky" />
+<remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
+<remote  name="flex"     fetch="https://github.com/FlexLineage" />
+<remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
+<remote  name="sonal"    fetch="https://gitlab.com/SonalSingh18" />
+<remote  name="gitlab"   fetch="https://gitlab.com" />
    
   <!-- Remove HALs -->
-                <remove-project name="LineageOS/android_packages_apps_Settings" />
-                <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
-                <remove-project name="LineageOS/android_frameworks_base" />
-                <remove-project name="LineageOS/android_vendor_lineage" />
-                <remove-project name="LineageOS/android_system_core" />
-                <remove-project name="LineageOS/android_lineage-sdk" />
-                <remove-project name="LineageOS/android_build" />
+<remove-project name="LineageOS/android_packages_apps_Settings" />
+<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+<remove-project name="LineageOS/android_frameworks_base" />
+<remove-project name="LineageOS/android_vendor_lineage" />
+<remove-project name="LineageOS/android_system_core" />
+<remove-project name="LineageOS/android_hardware_interfaces" />
+<remove-project name="LineageOS/android_bionic" />
+<remove-project name="LineageOS/android_build" />
 
   <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="cosmic" />
-                <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="lineage-20.0" />
-                <!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" / -->
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="main-190" />
-                <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
+<project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="los-miatoll" revision="lineage-20.0" />
+<project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="los-miatoll" revision="lineage-20.0" />
+<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" />
+<project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="los-miatoll" revision="lineage-20.0" />
+<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="los-miatoll" revision="master" />
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los-miatoll" revision="lineage-20.0" />
    
    <!-- addition -->
-                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-20.0" />
-                <!-- project path="frameworks/av" name="android_frameworks_av" remote="flex" revision="lineage-20.0" / -->
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-20.0" />
-                <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="flex" revision="lineage-20.0" />
-                <project path="system/core" name="android_system_core" remote="flex" revision="lineage-20.0" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="flex" revision="lineage-20.0" />
-                <project path="lineage-sdk" name="android_lineage-sdk" remote="flex" revision="lineage-20.0" />
+<project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-20.0" />
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
+<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los-miatoll" revision="lineage-20.0" />
+<project path="system/core" name="android_system_core" remote="los-miatoll" revision="lineage-20.0" />
+<project path="vendor/lineage" name="android_vendor_lineage" remote="los-miatoll" revision="lineage-20.0" />
+<project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="los-miatoll" revision="lineage-20.0" />
+<project path="bionic" name="android_bionic" groups="pdk" remote="los-miatoll" revision="lineage-20.0" />
 
-                <project path="build/make" name="android_build" remote="flex" revision="lineage-20.0" groups="pdk" >
-                <copyfile src="core/root.mk" dest="Makefile" />
-                <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-                <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-                <linkfile src="core" dest="build/core" />
-                <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-                <linkfile src="target" dest="build/target" />
-                <linkfile src="tools" dest="build/tools" />
-                </project>
+
+<project path="build/make" name="android_build" remote="los-miatoll" revision="lineage-20.0" groups="pdk" >
+<copyfile src="core/root.mk" dest="Makefile" />
+<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+<linkfile src="core" dest="build/core" />
+<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+<linkfile src="target" dest="build/target" />
+<linkfile src="tools" dest="build/tools" />
+</project>
    
 </manifest>
 
