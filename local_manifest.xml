@@ -5,6 +5,7 @@
 <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
 <remote  name="flex"     fetch="https://github.com/FlexLineage" />
 <remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
+<remote  name="crdroid-gitlab"  fetch="https://gitlab.com/crdroidandroid" />
 <remote  name="sonal"    fetch="https://gitlab.com/SonalSingh18" />
 <remote  name="gitlab"   fetch="https://gitlab.com" />
    
@@ -28,6 +29,7 @@
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los-miatoll" revision="lineage-20.0" />
    
    <!-- addition -->
+<project path="prebuilts/clang/host/linux-x86/clang-latest" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
 <project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-20.0" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los-miatoll" revision="lineage-20.0" />
