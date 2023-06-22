@@ -29,7 +29,7 @@
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los-miatoll" revision="lineage-20.0" />
    
    <!-- addition -->
-<project path="prebuilts/clang/host/linux-x86/clang-latest" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
+<project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
 <project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-20.0" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
 <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los-miatoll" revision="lineage-20.0" />
