@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    
-        <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-        <remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-        <remote  name="clang" fetch="https://github.com/kdrag0n" />
-        <remote  name="posi" fetch="https://github.com/Positron-B" />
-        <remote  name="cos" fetch="https://github.com/rayavanindra" />
-        <remote  name="web" fetch="https://github.com/CatOS-Tiramisu" />
+<remote  name="s" fetch="https://github.com/SwapnilVicky" />
+<remote  name="bliss" fetch="https://github.com/BlissRoms-Devices" />
+<remote  name="crdroid-gitlab"  fetch="https://gitlab.com/crdroidandroid" />
    
-  <!-- Changes needed for Miui Camera -->
-                <remove-project name="platform_bionic" />
-                <remove-project name="platform_hardware_interfaces" />
-                <!-- remove-project name="platform_frameworks_av" / -->
-                <remove-project name="platform_frameworks_base" />
-                <remove-project name="platform_build_soong" />
-                <!-- remove-project name="android_external_chromium-webview_prebuilt_arm64" / -->
+<!-- Changes needed for Miui Camera -->
+<!-- remove-project name="platform_bionic" / -->
+<!-- remove-project name="platform_hardware_interfaces" / -->
+<!-- remove-project name="platform_frameworks_av" / -->
+<!-- remove-project name="platform_frameworks_base" / -->
+<!-- remove-project name="platform_build_soong" / -->
    
-  <!-- Trees --> 
-                <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="typhoon" />
-                <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="posi" revision="main" />
-                <project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="typhoon" />
-                <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="llvm" />
-                <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="s" revision="lineage-20.0" />
+<!-- Trees --> 
+<project path="device/xiaomi/miatoll" name="platform_device_xiaomi_miatoll" remote="bliss" revision="typhoon" />
+<project path="device/xiaomi/sm6250-common" name="platform_device_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
+<project path="vendor/xiaomi/miatoll" name="platform_vendor_xiaomi_miatoll" remote="bliss" revision="typhoon" />
+<project path="vendor/xiaomi/sm6250-common" name="platform_vendor_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
+<project path="kernel/xiaomi/sm6250" name="platform_kernel_xiaomi_sm6250" remote="bliss" revision="typhoon" />
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bliss" revision="typhoon" />
+<project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
    
-   <!-- Track clangs -->
-                <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-                <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
+<!-- Changes needed for Miui Camera -->
+<!-- project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" / -->
+<!-- project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" / -->
+<!-- project path="bionic" name="platform_bionic" remote="s" revision="typhoon" / -->
+<!-- project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" / -->
    
-   <!-- Changes needed for Miui Camera -->
+<!-- project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon" -->
+<!-- linkfile src="root.bp" dest="Android.bp" / -->
+<!-- linkfile src="bootstrap.bash" dest="bootstrap.bash" / -->
+<!-- /project -->
    
-   <!-- project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="main" / -->
-   
-               <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" />
-               <!-- project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" / -->
-               <project path="bionic" name="platform_bionic" remote="s" revision="typhoon" />
-               <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" />
-   
-               <project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon">
-               <linkfile src="root.bp" dest="Android.bp" />
-               <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-               </project >
-   
-   
-
-
 </manifest>
 
 
