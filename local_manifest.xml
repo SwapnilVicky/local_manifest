@@ -4,7 +4,7 @@
 <remote  name="s" fetch="https://github.com/SwapnilVicky" />
 <remote  name="bliss" fetch="https://github.com/BlissRoms-Devices" />
 <remote  name="crdroid-gitlab"  fetch="https://gitlab.com/crdroidandroid" />
-<remote  name="lineage" fetch="https://github.com/LineageOS" />
+<remote  name="web" fetch="https://github.com/LineageOS" />
    
 <!-- Changes needed for Miui Camera -->
 <!-- remove-project name="platform_bionic" / -->
@@ -22,7 +22,7 @@
 <project path="kernel/xiaomi/sm6250" name="platform_kernel_xiaomi_sm6250" remote="bliss" revision="typhoon" />
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bliss" revision="typhoon" />
 <project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
-<project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="lineage" revision="backup/main_20230314" />
+<project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" />
    
 <!-- Changes needed for Miui Camera -->
 <!-- project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" / -->
