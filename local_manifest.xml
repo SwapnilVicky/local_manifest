@@ -2,7 +2,7 @@
 <manifest>
    
         <remote  name="s"     fetch="https://github.com/SwapnilVicky" />
-        <remote  name="flex"  fetch="https://github.com/FlexLineage" />
+        <remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
         <remote  name="clang" fetch="https://github.com/kdrag0n" />
         <remote  name="xt"    fetch="https://github.com/Xtended-Devices" />
    
@@ -24,12 +24,12 @@
 
    
  <!-- addition -->
-                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="flex" revision="lineage-17.1" />
-                <project path="frameworks/base" name="android_frameworks_base" remote="flex" revision="lineage-17.1" />
-                <project path="vendor/lineage" name="android_vendor_lineage" remote="flex" revision="lineage-17.1" />
-                <project path="system/core" name="android_system_core" remote="flex" revision="lineage-17.1" />
+                <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-17.1" />
+                <project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-17.1" />
+                <project path="vendor/lineage" name="android_vendor_lineage" remote="los-miatoll" revision="lineage-17.1" />
+                <project path="system/core" name="android_system_core" remote="los-miatoll" revision="lineage-17.1" />
    
-                <project path="build/make" name="android_build" groups="pdk" revision="lineage-17.1" remote="flex" >
+                <project path="build/make" name="android_build" groups="pdk" revision="lineage-17.1" remote="los-miatoll" >
                 <copyfile src="core/root.mk" dest="Makefile" />
                 <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
                 <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
