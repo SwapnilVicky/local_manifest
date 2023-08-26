@@ -8,7 +8,7 @@
 <remote  name="clang" fetch="https://github.com/kdrag0n" />
    
 <!-- Remove HALs -->
-<remove-project name="android_external_chromium-webview_prebuilt_arm64" />
+<remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" />
 <remove-project name="LineageOS/android_packages_apps_Settings" />
 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 <remove-project name="LineageOS/android_frameworks_base" />
