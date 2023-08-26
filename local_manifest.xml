@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    
-<remote  name="s"        fetch="https://github.com/SwapnilVicky" />
-<remote  name="r450784d" fetch="https://gitlab.com/SwapnilVicky" />
-<remote  name="flex"     fetch="https://github.com/FlexLineage" />
-<remote  name="los-miatoll"     fetch="https://github.com/los-miatoll" />
-<remote  name="crdroid-gitlab"  fetch="https://gitlab.com/crdroidandroid" />
-<remote  name="sonal"    fetch="https://gitlab.com/SonalSingh18" />
+<remote  name="s"  fetch="https://github.com/SwapnilVicky" />
+<remote  name="Pvt" fetch="https://github.com/LineageOS-Pvt" />
+<remote  name="Joker-V2" fetch="https://gitlab.com/Joker-V2" />
 <remote  name="gitlab"   fetch="https://gitlab.com" />
 <remote  name="clang" fetch="https://github.com/kdrag0n" />
    
-  <!-- Remove HALs -->
+<!-- Remove HALs -->
+<remove-project name="android_external_chromium-webview_prebuilt_arm64" />
 <remove-project name="LineageOS/android_packages_apps_Settings" />
 <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 <remove-project name="LineageOS/android_frameworks_base" />
 <remove-project name="LineageOS/android_vendor_lineage" />
 <remove-project name="LineageOS/android_system_core" />
-<!-- remove-project name="LineageOS/android_hardware_interfaces" / -->
-<!-- remove-project name="LineageOS/android_bionic" / -->
 <remove-project name="LineageOS/android_build" />
 
-  <!-- Trees --> 
-<project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="los-miatoll" revision="lineage-20.0" />
-<project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="los-miatoll" revision="lineage-20.0" />
-<!-- project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="sonal" revision="thirteen" / -->
-<project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="los-miatoll" revision="lineage-20.0" />
-<project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="los-miatoll" revision="lineage-20.0" />
-<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="los-miatoll" revision="master" />
-<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los-miatoll" revision="lineage-20.0" />
+<!-- Trees --> 
+<project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
+<project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="lineage-20.0" />
+<project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
+<project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="lineage-20.0" />
+<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
+<project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-20" />
    
-   <!-- addition -->
-<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-<project path="prebuilts/clang/host/linux-x86/clang-r487747" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="crdroid-gitlab" revision="13.0" />
-<project path="frameworks/base" name="android_frameworks_base" remote="los-miatoll" revision="lineage-20.0" />
-<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="los-miatoll" revision="lineage-20.0" />
-<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los-miatoll" revision="lineage-20.0" />
-<project path="system/core" name="android_system_core" remote="los-miatoll" revision="lineage-20.0" />
-<project path="vendor/lineage" name="android_vendor_lineage" remote="los-miatoll" revision="lineage-20.0" />
-<!-- project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="los-miatoll" revision="lineage-20.0" / -->
-<!-- project path="bionic" name="android_bionic" groups="pdk" remote="los-miatoll" revision="lineage-20.0" / -->
+<!-- addition -->
+<project path="external/chromium-webview/prebuilt/arm64" name="LineageOS/android_external_chromium-webview_prebuilt_arm64" revision="backup/main_20230314" />
+<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="Joker-V2" revision="master" />
+<project path="frameworks/base" name="android_frameworks_base" remote="Pvt" revision="lineage-20.0" />
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Pvt" revision="lineage-20.0" />
+<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="Pvt" revision="lineage-20.0" />
+<project path="system/core" name="android_system_core" remote="Pvt" revision="lineage-20.0" />
+<project path="vendor/lineage" name="android_vendor_lineage" remote="Pvt" revision="lineage-20.0" />
 
-
-<project path="build/make" name="android_build" remote="los-miatoll" revision="lineage-20.0" groups="pdk" >
+<project path="build/make" name="android_build" remote="Pvt" revision="lineage-20.0" groups="pdk" >
 <copyfile src="core/root.mk" dest="Makefile" />
 <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
 <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
