@@ -3,7 +3,7 @@
    
 <remote  name="s" fetch="https://github.com/SwapnilVicky" />
 <remote  name="bliss" fetch="https://github.com/BlissRoms-Devices" />
-<remote  name="crdroid-gitlab"  fetch="https://gitlab.com/crdroidandroid" />
+<remote  name="miui"  fetch="https://gitlab.com/rayavanindra" />
 <remote  name="web" fetch="https://github.com/LineageOS" />
 <remote  name="Joker-V2" fetch="https://gitlab.com/Joker-V2" />
    
@@ -20,6 +20,7 @@
 <!-- Trees --> 
 <project path="device/xiaomi/miatoll" name="platform_device_xiaomi_miatoll" remote="bliss" revision="typhoon" />
 <project path="device/xiaomi/sm6250-common" name="platform_device_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
+<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="miui" revision="thirteen" />
 <project path="vendor/xiaomi/miatoll" name="platform_vendor_xiaomi_miatoll" remote="bliss" revision="typhoon" />
 <project path="vendor/xiaomi/sm6250-common" name="platform_vendor_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
 <project path="kernel/xiaomi/sm6250" name="platform_kernel_xiaomi_sm6250" remote="bliss" revision="typhoon" />
