@@ -22,6 +22,9 @@
 
 <remove-project name="platform_frameworks_base" />
 <project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="t" />
+
+<remove-project name="platform_packages_apps_BlissSystemUI" />
+<project path="packages/apps/BlissSystemUI" name="platform_packages_apps_BlissSystemUI" remote="s" revision="typhoon" />
    
 <!-- Trees --> 
 <project path="device/xiaomi/miatoll" name="platform_device_xiaomi_miatoll" remote="bliss" revision="typhoon" />
