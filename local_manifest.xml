@@ -15,13 +15,13 @@
 <!-- remove-project name="platform_vendor_support" / --> 
 <!-- remove-project name="platform_packages_apps_Blissify" / -->
 <!-- remove-project name="platform_build_soong" / -->
-<remove-project name="android_external_chromium-webview_prebuilt_arm64" />
+<!-- remove-project name="android_external_chromium-webview_prebuilt_arm64" / -->
    
-<remove-project name="platform_packages_apps_Messaging" />
-<project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="s" revision="typhoon" />
+<!-- remove-project name="platform_packages_apps_Messaging" / -->
+<!-- project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="s" revision="typhoon" / -->
 
 <remove-project name="platform_frameworks_base" />
-<project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="typhoon" />
+<project path="frameworks/base" name="platform_frameworks_base" remote="s" revision="t" />
 
    
 <!-- Trees --> 
@@ -33,7 +33,7 @@
 <project path="kernel/xiaomi/sm6250" name="platform_kernel_xiaomi_sm6250" remote="bliss" revision="typhoon" />
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bliss" revision="typhoon" />
 <project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="Joker-V2" revision="master" />
-<project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" />
+<!-- project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" / -->
    
 <!-- Changes needed for Miui Camera -->
 <!-- project path="vendor/support" name="platform_vendor_support" remote="blissExt" revision="typhoon" / -->
