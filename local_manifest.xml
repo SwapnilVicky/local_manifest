@@ -2,33 +2,18 @@
 <manifest>
    
 <remote  name="s" fetch="https://github.com/SwapnilVicky" />
-<remote  name="bliss" fetch="https://github.com/BlissRoms-Devices" />
 <remote  name="miui"  fetch="https://gitlab.com/rayavanindra" />
 <remote  name="Joker-V2" fetch="https://gitlab.com/Joker-V2" />
    
    
 <!-- Trees --> 
-<project path="device/xiaomi/miatoll" name="platform_device_xiaomi_miatoll" remote="bliss" revision="typhoon" />
-<project path="device/xiaomi/sm6250-common" name="platform_device_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
-<project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="miui" revision="thirteen" />
-<project path="vendor/xiaomi/miatoll" name="platform_vendor_xiaomi_miatoll" remote="bliss" revision="typhoon" />
-<project path="vendor/xiaomi/sm6250-common" name="platform_vendor_xiaomi_sm6250-common" remote="bliss" revision="typhoon" />
-<project path="kernel/xiaomi/sm6250" name="platform_kernel_xiaomi_sm6250" remote="bliss" revision="typhoon" />
-<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bliss" revision="typhoon" />
-<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="prebuilts_clang_host_linux-x86_clang-r498229" remote="Joker-V2" revision="master" />
-<!-- project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" / -->
-   
-<!-- Changes needed for Miui Camera -->
-<!-- project path="frameworks/base" name="platform_frameworks_base" remote="blissExt" revision="typhoon" / -->
-<!-- project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="blissExt" revision="typhoon" / -->
-<!-- project path="frameworks/av" name="platform_frameworks_av" remote="s" revision="typhoon" / -->
-<!-- project path="bionic" name="platform_bionic" remote="s" revision="typhoon" / -->
-<!-- project path="hardware/interfaces" name="platform_hardware_interfaces" remote="s" revision="typhoon" / -->
-   
-<!-- project path="build/soong" name="platform_build_soong" remote="s" revision="typhoon" -->
-<!-- linkfile src="root.bp" dest="Android.bp" / -->
-<!-- linkfile src="bootstrap.bash" dest="bootstrap.bash" / -->
-<!-- /project -->
+<project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="universe" />
+<project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="universe" />
+<project path="vendor/xiaomi/miatoll" name="platform_vendor_xiaomi_miatoll" remote="BlissRoms-Devices" revision="universe" />
+<project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="universe" />
+<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="velvet" />
+<project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="BlissRoms-Devices" revision="universe" />
+<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
    
 </manifest>
 
