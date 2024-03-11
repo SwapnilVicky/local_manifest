@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    
-<remote  name="s" fetch="https://github.com/SwapnilVicky" />
-<remote  name="miui"  fetch="https://gitlab.com/rayavanindra" />
-<remote  name="Joker-V2" fetch="https://gitlab.com/Joker-V2" />
-   
-   
+<remote  name="s"  fetch="https://github.com/SwapnilVicky" />
+
 <!-- Trees --> 
 <project path="device/xiaomi/miatoll" name="device_xiaomi_miatoll" remote="s" revision="universe" />
 <project path="device/xiaomi/sm6250-common" name="device_xiaomi_sm6250-common" remote="s" revision="universe" />
-<project path="vendor/xiaomi/miatoll" name="platform_vendor_xiaomi_miatoll" remote="BlissRoms-Devices" revision="universe" />
+<project path="vendor/xiaomi/miatoll" name="vendor_xiaomi_miatoll" remote="s" revision="universe" />
 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="universe" />
-<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="velvet" />
+<project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="BlissRoms-Devices" revision="universe" />
 <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
-   
+
 </manifest>
-
-
-              
- 
