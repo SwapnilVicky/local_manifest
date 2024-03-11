@@ -10,6 +10,6 @@
 <project path="vendor/xiaomi/sm6250-common" name="vendor_xiaomi_sm6250-common" remote="s" revision="universe" />
 <project path="kernel/xiaomi/sm6250" name="namaste_xiaomi_miatoll" remote="s" revision="lineage-20.0" />
 <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="BlissRoms-Devices" revision="universe" />
-<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
+<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="lineage" revision="lineage-21" />
 
 </manifest>
